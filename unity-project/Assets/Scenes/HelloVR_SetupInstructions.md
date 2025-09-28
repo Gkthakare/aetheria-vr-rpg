@@ -12,7 +12,7 @@ Since Unity scene files are binary, follow these steps to create the HelloVR sce
 
 3. **Set up XR Origin:**
    - Delete the default Main Camera
-   - Right-click in Hierarchy > XR > XR Origin (Action-based)
+   - Right-click in Hierarchy > XR > XR Origin (VR)
    - This creates: XR Origin, Main Camera, LeftHand Controller, RightHand Controller
 
 4. **Configure XR Origin:**
@@ -39,7 +39,7 @@ Since Unity scene files are binary, follow these steps to create the HelloVR sce
    - Add Component: XR Grab Interactable
 
 7. **Add XR Interaction Manager:**
-   - Right-click in Hierarchy > XR > XR Interaction Manager
+   - Right-click in Hierarchy > XR > Interaction Manager
    - This enables XR interactions
 
 8. **Add Lighting:**
@@ -50,13 +50,13 @@ Since Unity scene files are binary, follow these steps to create the HelloVR sce
 ## Expected Scene Hierarchy:
 ```
 HelloVR
-├── XR Origin (Action-based)
+├── XR Origin
 │   ├── Main Camera
 │   ├── LeftHand Controller
 │   └── RightHand Controller
 ├── Ground
 ├── InteractableCube
-├── XR Interaction Manager
+├── Interaction Manager
 └── Directional Light
 ```
 
@@ -66,9 +66,19 @@ HelloVR
 3. Press Left Shift + Mouse to simulate controller input
 4. The VRPlayerController should log debug messages
 
+## XR Configuration (Important!):
+1. Go to Window > XR Plug-in Management
+2. Check "Initialize XR on Startup"
+3. Add "OpenXR" provider
+4. Configure OpenXR for Quest 3
+
 ## Build Settings:
 1. File > Build Settings
 2. Switch Platform to Android
 3. Add Open Scenes: HelloVR
-4. Player Settings > XR Plug-in Management > Initialize XR on Startup: ON
-5. Add OpenXR Provider
+4. Player Settings:
+   - Company Name: Your Company
+   - Product Name: Aetheria VR
+   - Package Name: com.yourcompany.aetheria
+   - Minimum API Level: 23 (Android 6.0)
+   - Target API Level: 33 (Android 13)

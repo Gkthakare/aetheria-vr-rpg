@@ -32,14 +32,20 @@ A Quest 3 (Android/OpenXR) Unity project featuring:
    - Add "OpenXR" provider
    - Configure OpenXR for Quest 3
 
-3. **Create HelloVR Scene:**
+3. **Configure XR Settings:**
+   - Window > XR Plug-in Management
+   - Check "Initialize XR on Startup"
+   - Add "OpenXR" provider
+   - Configure OpenXR for Quest 3
+
+4. **Create HelloVR Scene:**
    - Follow instructions in `Assets/Scenes/HelloVR_SetupInstructions.md`
    - This creates a basic VR scene with teleportation and interactable objects
 
-4. **Run Tests:**
-   - Window > General > Test Runner
-   - Select "PlayMode" tab
-   - Click "Run All" to verify setup
+5. **Test in Editor:**
+   - Press Play in Unity
+   - Use mouse to look around (simulates VR headset)
+   - Check Console for debug messages
 
 ### Building for Quest 3
 

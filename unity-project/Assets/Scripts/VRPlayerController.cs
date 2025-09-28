@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.XR;
+using System.Collections.Generic;
 
 namespace Aetheria.VR
 {
@@ -7,11 +8,12 @@ namespace Aetheria.VR
     /// Basic VR player controller for Quest 3 with OpenXR support.
     /// Handles teleportation movement and basic interactions.
     /// 
-    /// Setup Instructions:
+    /// Setup Instructions (Unity 2022.3 LTS):
     /// 1. Attach this script to the XR Origin GameObject
     /// 2. Ensure XR Origin has XR Origin component
-    /// 3. Add XR Interaction Manager to the scene
-    /// 4. Configure Input Actions for teleportation
+    /// 3. Add Interaction Manager to the scene
+    /// 4. Configure XR Plug-in Management for OpenXR
+    /// 5. Set up Input System for VR controllers
     /// </summary>
     public class VRPlayerController : MonoBehaviour
     {
