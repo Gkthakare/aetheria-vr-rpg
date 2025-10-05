@@ -4,7 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/HelloVR.unity
+    guid: b0dfda4b7aab9024b99be29bb5d78327
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 903557653f1a8c047bc52a3f76cafdfb, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a95dd65805496cc408f7de97daf8574c, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e51aaece47f742147942731967c0da90, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b62f45cf8f0ddfb44b0260fb78c1da76, type: 2}
