@@ -20,16 +20,20 @@ namespace Aetheria.World
         [SerializeField] private Transform player;
         
         private Dictionary<Vector2Int, GameObject> loadedChunks = new Dictionary<Vector2Int, GameObject>();
-        private Vector2Int lastPlayerChunk = Vector2Int.zero;
+        private Vector2Int lastPlayerChunk = new Vector2Int(int.MinValue, int.MinValue);
         
         void Start()
         {
             if (chunkGenerator == null)
                 chunkGenerator = GetComponent<ChunkGenerator>();
-            
             if (player == null)
                 player = Camera.main.transform;
-            
+
+            // Force an initial load around the current player position
+            var currentChunk = GetChunkCoord(player.position);
+            UpdateLoadedChunks(currentChunk);
+            lastPlayerChunk = currentChunk;
+
             StartCoroutine(UpdateChunks());
         }
         
@@ -59,7 +63,7 @@ namespace Aetheria.World
         {
             return new Vector2Int(
                 Mathf.FloorToInt(worldPos.x / chunkSize),
-                Mathf.FloorToInt(worldPos.z / chunkSize)
+                Mathf.FloorToInt(worldPos.z / chunkSize)  // This is correct - worldPos.z is fine
             );
         }
         
@@ -125,11 +129,11 @@ namespace Aetheria.World
         /// </summary>
         private GameObject CreateChunkVisual(ChunkData chunkData)
         {
-            GameObject chunkObject = new GameObject($"Chunk_{chunkData.chunkCoord.x}_{chunkData.chunkCoord.z}");
+            GameObject chunkObject = new GameObject($"Chunk_{chunkData.chunkCoord.x}_{chunkData.chunkCoord.y}");
             chunkObject.transform.position = new Vector3(
                 chunkData.chunkCoord.x * chunkSize,
                 0,
-                chunkData.chunkCoord.z * chunkSize
+                chunkData.chunkCoord.y * chunkSize  // Fixed: use .y instead of .z
             );
             
             // Create tiles for this chunk

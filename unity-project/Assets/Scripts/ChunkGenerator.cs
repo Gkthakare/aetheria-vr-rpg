@@ -47,7 +47,7 @@ namespace Aetheria.World
                 {
                     Vector2 worldPos = new Vector2(
                         chunkCoord.x * chunkSize + x,
-                        chunkCoord.z * chunkSize + z
+                        chunkCoord.y * chunkSize + z  // Fixed: use .y instead of .z
                     );
                     
                     float noiseValue = GenerateNoise(worldPos);

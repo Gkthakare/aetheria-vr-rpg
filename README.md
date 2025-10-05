@@ -114,6 +114,11 @@ After completing Hello VR setup:
 4. **Dungeon System** - Create growing, interactive dungeons
 5. **Multiplayer** - Add networking for team-based gameplay
 
+## SAO-Inspired Prototype Modules
+- Docs: `unity-project/Docs/Design_Overview_SAO.md`
+- Dungeon generation: add `DungeonGenerator` to an empty `WorldManager` in a test scene; press Play to log the graph.
+- Ability demo: add `AbilitySystem` to a player/camera; press J/K/L to trigger sample skills and see stamina/cooldown logs.
+
 ## Troubleshooting
 
 ### Common Issues

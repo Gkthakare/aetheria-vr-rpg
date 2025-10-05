@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &660496819612886135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6225650794794891289}
+  - component: {fileID: 2719658231307991118}
+  - component: {fileID: 6053607346591977656}
+  m_Layer: 0
+  m_Name: New Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6225650794794891289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660496819612886135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2719658231307991118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660496819612886135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0abc21c3a4945484dab091df1ab91231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkSize: 16
+  tileSize: 1
+  seed: 12345
+  noiseScale: 0.1
+  octaves: 4
+  persistence: 0.5
+  lacunarity: 2
+  terrainTypes:
+  - name: Water
+    tileType: 0
+    height: 0.2
+    color: {r: 0.053266272, g: 0.19747289, b: 0.5943396, a: 0}
+  - name: Sand
+    tileType: 1
+    height: 0.4
+    color: {r: 0.9137255, g: 0.6474685, b: 0.09019608, a: 0}
+  - name: Grass
+    tileType: 2
+    height: 0.6
+    color: {r: 0.07869864, g: 0.5849056, b: 0.06345675, a: 0}
+  - name: Forest
+    tileType: 3
+    height: 0.8
+    color: {r: 0.2, g: 0.4392157, b: 0.2, a: 0}
+  - name: Mountain
+    tileType: 4
+    height: 0.9
+    color: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+  - name: Snow
+    tileType: 5
+    height: 1
+    color: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &6053607346591977656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660496819612886135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00009241cbe31904b8db4e591726d535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderDistance: 3
+  chunkSize: 16
+  tileSize: 1
+  chunkGenerator: {fileID: 2719658231307991118}
+  player: {fileID: 0}
