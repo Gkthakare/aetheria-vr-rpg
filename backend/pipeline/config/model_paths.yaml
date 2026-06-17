@@ -1,0 +1,23 @@
+# Model Download Paths and Cache Locations
+models:
+  sdxl:
+    base: "stabilityai/stable-diffusion-xl-base-1.0"
+    refiner: "stabilityai/stable-diffusion-xl-refiner-1.0"
+    cache_dir: "./models/sdxl"
+  
+  zero123:
+    model_id: "stabilityai/stable-zero-123"
+    cache_dir: "./models/zero123"
+  
+  triposr:
+    repo_id: "VAST-AI-Research/TripoSR"
+    cache_dir: "./models/triposr"
+  
+  dreamgaussian:
+    repo_id: "gaussian-splatting"
+    cache_dir: "./models/dreamgaussian"
+
+# HuggingFace settings
+huggingface:
+  cache_dir: "./models"
+  offline_mode: false

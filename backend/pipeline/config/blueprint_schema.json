@@ -1,0 +1,45 @@
+{
+  "blueprint_version": "1.0",
+  "asset_metadata": {
+    "name": "Forest Guardian Beast",
+    "type": "creature",
+    "category": "fantasy",
+    "tags": ["forest", "guardian", "tree-monster", "boss"],
+    "difficulty": "advanced",
+    "vr_compatible": true
+  },
+  "generation_info": {
+    "concept_prompt": "",
+    "generation_date": "",
+    "model_versions": {
+      "sdxl": "1.0",
+      "zero123": "1.0",
+      "triposr": "1.0",
+      "dreamgaussian": "1.0"
+    }
+  },
+  "asset_data": {
+    "concept_art": {
+      "path": "",
+      "resolution": "1024x1024",
+      "format": "png"
+    },
+    "multiview": {
+      "paths": ["front", "right", "back", "left"],
+      "resolution": "1024x1024"
+    },
+    "mesh": {
+      "path": "",
+      "format": "glb",
+      "polycount": 100000,
+      "has_materials": true,
+      "has_textures": true
+    }
+  },
+  "variations": {
+    "enabled": true,
+    "seed_base": 42,
+    "color_variations": [],
+    "size_variations": []
+  }
+}

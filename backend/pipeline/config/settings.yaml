@@ -1,0 +1,43 @@
+# AI 3D Monster Generator - Settings
+project_name: "3D Monster Asset Generator"
+version: "0.1.0"
+
+# GPU Settings
+gpu:
+  enabled: true
+  device: "cuda"
+  dtype: "float16"  # float16 for efficiency, float32 for precision
+  max_memory_gb: 8  # Adjust based on your GPU VRAM
+
+# SDXL Concept Art Settings
+sdxl:
+  model_id: "stabilityai/stable-diffusion-xl-base-1.0"
+  inference_steps: 40
+  guidance_scale: 7.5
+  height: 1024
+  width: 1024
+  use_safetensors: true
+
+# Zero123XL Multi-View Settings
+multiview:
+  num_views: 4  # Front, Right, Back, Left
+  elevation: 0
+  azimuth_steps: 90
+
+# TripoSR 3D Mesh Generation
+triposr:
+  num_chunks: 1
+  mesh_simplification: true
+  target_polycount: 100000
+
+# DreamGaussian Refinement
+dreamgaussian:
+  iterations: 1000
+  learning_rate: 0.01
+  refinement_enabled: true
+
+# Output paths
+output:
+  concept_format: "png"
+  mesh_format: "obj"
+  export_format: "glb"  # For Unity/VR

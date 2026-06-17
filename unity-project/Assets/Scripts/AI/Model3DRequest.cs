@@ -12,7 +12,7 @@ namespace Aetheria.AI
     public class Model3DRequest : MonoBehaviour
     {
         [Header("API")]
-        [SerializeField] private string apiUrl = "http://localhost:8000/generate_3d";
+        [SerializeField] private string apiUrl = "http://localhost:8001/generate_3d";
         [Tooltip("Shap-E takes ~5-10 min. Stay in Play mode. Set 900+ for slow machines.")]
         [SerializeField] private float timeoutSeconds = 900f;
 

@@ -10,7 +10,7 @@ namespace Aetheria.Training
     public class APIGestureRecognizer : MonoBehaviour, IGestureRecognizer
     {
         [Header("API")]
-        [SerializeField] private string apiUrl = "http://localhost:8000/gesture";
+        [SerializeField] private string apiUrl = "http://localhost:8001/gesture";
         [SerializeField] private float timeoutSeconds = 0.5f;
         [SerializeField] private float cacheSeconds = 0.1f;
 

@@ -11,7 +11,7 @@ namespace Aetheria.AI
     public class VFXTextureRequest : MonoBehaviour
     {
         [Header("API")]
-        [SerializeField] private string apiUrl = "http://localhost:8000/generate_vfx";
+        [SerializeField] private string apiUrl = "http://localhost:8001/generate_vfx";
         [Tooltip("Stable Diffusion: 30-60s (GPU) or 2-5 min (CPU). Stay in Play mode until done.")]
         [SerializeField] private float timeoutSeconds = 600f;
 

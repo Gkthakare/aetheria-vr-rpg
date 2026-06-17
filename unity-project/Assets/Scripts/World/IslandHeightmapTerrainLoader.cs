@@ -17,8 +17,8 @@ namespace Aetheria.World
         [SerializeField] private IslandWorldBuilder islandWorld;
 
         [Header("API (3d-monster-gen FastAPI)")]
-        [Tooltip("Host for the dashboard API (uvicorn). AIClient defaults to :8001; this endpoint is often served on :8000.")]
-        [SerializeField] private string apiBaseUrl = "http://127.0.0.1:8000";
+        [Tooltip("Host for the unified Aetheria backend (uvicorn, port 8001). Use your PC LAN IP for Quest builds.")]
+        [SerializeField] private string apiBaseUrl = "http://127.0.0.1:8001";
         [SerializeField] private int heightmapResolution = 513;
         [SerializeField] private int randomSeed;
 
