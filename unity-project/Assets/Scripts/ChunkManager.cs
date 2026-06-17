@@ -44,8 +44,8 @@ namespace Aetheria.World
         [SerializeField] private bool useVegetationDensity = true;
 
         [Header("SUIMONO infinite ocean")]
-        [Tooltip("When true, water tiles are not meshed (use Suimono InfinityWaterBootstrap instead).")]
-        [SerializeField] private bool suppressWaterTilesForSuimono;
+        [Tooltip("When true, water tiles are not meshed (use Suimono InfinityWaterBootstrap instead). Default ON: the game uses one continuous Suimono ocean, not per-chunk water puddles.")]
+        [SerializeField] private bool suppressWaterTilesForSuimono = true;
 
         [Tooltip("When false, no procedural chunk tiles are spawned (only Suimono + your hand-placed island/hub). Use for island-in-ocean scenes to avoid duplicate sand/grass fragments floating in the water.")]
         [SerializeField] private bool enableProceduralTerrainChunks = true;
