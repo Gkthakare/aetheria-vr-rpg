@@ -1,0 +1,15 @@
+{
+  "catalog_id": "environment.portal.arcane.v1",
+  "meshy_base_name": "environment_portal_arcane_v1",
+  "unity_import_folder": "Assets/ImportedContent/Creatures/environment.portal.arcane.v1",
+  "files": [
+    "environment_portal_arcane_v1.glb",
+    "environment_portal_arcane_v1.fbx",
+    "environment_portal_arcane_v1.usdz",
+    "environment_portal_arcane_v1.obj",
+    "environment_portal_arcane_v1.stl",
+    "environment_portal_arcane_v1_thumbnail.png"
+  ],
+  "unity_import_tip": "Unity 2022 imports .fbx/.obj natively. If .glb shows as Default Asset, use the .fbx from this folder or add package com.unity.cloud.gltfast.",
+  "generation_json": "assets/raw/generation_20260426_080848.json"
+}

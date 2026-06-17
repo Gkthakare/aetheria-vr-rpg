@@ -1,0 +1,30 @@
+{
+  "id": "019dbbfd-40d2-75e2-a378-a68f51aa2f19",
+  "type": "text-to-3d-preview",
+  "mode": "preview",
+  "name": "",
+  "model_type": "standard",
+  "seed": 1895621656,
+  "art_style": "realistic",
+  "texture_richness": "",
+  "prompt": "Create a game-ready 3D asset with the following requirements:\n- Asset category: dragon\n- Style: semi-realistic\n- Poly budget: around 50000 triangles\n- Texture profile: PBR realistic\n- Key details: target_platform=unity_vr\n- Animation-ready topology: True\n- Required animations: idle, walk, attack, fly, roar\nReturn clean geometry suitable for Unity import.",
+  "negative_prompt": "",
+  "texture_prompt": "",
+  "texture_image_url": "",
+  "status": "SUCCEEDED",
+  "created_at": 1776975431302,
+  "progress": 100,
+  "started_at": 1776975431406,
+  "finished_at": 1776975496592,
+  "task_error": null,
+  "model_urls": {
+    "glb": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dbbfd-40d2-75e2-a378-a68f51aa2f19/output/model.glb?Expires=4930502400&Signature=OjDgqSb6z50Xa1e10fUL1NeBr52M2LKsorZZd1WuqPo-GV6Dys~nVScIBFZWJPBVnW5B8gheI2W2QRufBywyRz96fltcKMbNKN~aGapi~SAiSeqYTesqvQr0ahQ1m68i1i9UB9ECQVwT0PsU2esD2u~jXs8DeBdYepflzlkMZkcdOJZUFWRnQwPUE3~XYplgVlmxiFgcFzI-vAuRXU4OW3nXI8ZnKGa3XNidYg79qokIUA~JAtIuECKeGSrA0PTv4nE0TkRmCZvgADHQurT4pGi62U6y5c4tjh--Czw55qfonCzkRaMBTchvccK7s0t4BblKbdQf4hQc64QifBVE3Q__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "fbx": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dbbfd-40d2-75e2-a378-a68f51aa2f19/output/model.fbx?Expires=4930502400&Signature=JYkfrnBCaQNRHpbXchNocmM8852dPpLZ4ND0zX2NhwaUo9MKklVfphwcTxxNAfFYpWQZzNXH5wkmEay0eVvwzxplS4ADdq0vkcC6WMgU3i-wk7FOAinyCYgyEaSI~vkOB2-2q6BPUn-0T0plDkPBtYGD6yu0GubSp2Esvg4xaxkEKwHskzTDP1gcvyHHGC2M9TB4VIukgryf6J0aPtB9~mDBzS99ke0neWAzPVpkppiYT-mKH-q9iU5WFhcxoVSYT0iBImIFoNnXQeRRbaT-mgvc~mvQ7X8RLrE57tCd29faJ3f5r4w20JIoxeTeDzVoCB-LFsbJRC8cx~6LVzcEGA__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "usdz": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dbbfd-40d2-75e2-a378-a68f51aa2f19/output/model.usdz?Expires=4930502400&Signature=eMqgVURqMtN1-nPQOZoZM9bG8KmXNdE2LIECrHaOduTvXaykcpp2Z~u1nkcA3I-gKnc~IB40iQFVV7AwLClitRhxRXBy7RR0CjGWKeVYhF6eymnnce3~pmnNbYIN6oC83DoRep-Rj9wOT~-ULjQBy1T2W19n7kEnmFvkhElBvNYA0m-lY01kt7yftIPoo9ii6a1kxrUu~lXamb-myYp62t2~H-txbMTDzYTXQE35E5yqriDdNIWKdbe9RMHJOepl1yMXlk77hqyp6s9dwzewk1YpXXiOSgC10YdNrttDbGPXMA5le0HLIcmCiGx70fjv3h95JvdjEhC3unizkif13w__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "obj": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dbbfd-40d2-75e2-a378-a68f51aa2f19/output/model.obj?Expires=4930502400&Signature=aLSLS5psGQNcGTRfHxFufEXg9ZpB~tlTi7y-pCoSJOTLfjluZwTa6brlpya~eDmo4LV7FvOB97TUGT6-QUzTPfpQMJZdG218Mcs9cAc6x11OhtARIjGZ22-TH17QDUra-NSz3Zxbz-00iwzJZhBm3fjrq2YvJN33Ez85YjkrE64ola9K5nwobyS79k0jVrCr8-cueCXD3wmHt-RdCmt531DFkuqaDSPxRvtPFC7qCdmWIFBa-RKUBPmS31WmmTRhj7sYLXjZAeU0qQZuWkVbKZycSt~8XrokZjxpExTJp2Jc4tJSZOBZP0--I5FSgVm85QwTCoZDBO6qAQiJAA7sXw__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "stl": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dbbfd-40d2-75e2-a378-a68f51aa2f19/output/model.stl?Expires=4930502400&Signature=AotoFkVCQ-gSGqmPby6t1g8khnu~yoH0O~2LDmnfFluEjOK6eIDgGPXAPAr-kKAZWLmWiuaQe0FPDBku4wIlCw6so5ikd8f6Y12kNtTyScKMR9JSxK-Z5NF-6ajGs7lx1V49H-bkB9u4Iek8zh0T2ZyOw9CfNQoH4QSIZuwK6mkBpcdTU3G8IDn7SwGGrdJBrQz23yLxU3W3kjDzIi99XUAe1FkWJRnVB1o5ooVOBWG3Jcp-Xom~jhW10LBhQXNzqk2E~V7OvLpsshIgB6FlIxQXB4BkhcjdWKMcIWgceg0vf3L3PFfGkEs8CisVQredMAbz~LwMbkPi3ahXwHdjwA__&Key-Pair-Id=K1VGYTHIYLM9UM"
+  },
+  "thumbnail_url": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dbbfd-40d2-75e2-a378-a68f51aa2f19/output/preview.png?Expires=4930502400&Signature=pZsIrbYFkSzE6dMNqOtSaHGAOW~gRbJiiocjogs1AI3KO4wY5Wtu1kjyPz7Fp09P-tYsV0kSioqOXgjVXppXlsRpwzJMaX3ULfthEYCC~JaBnpx-SSWZ0rcPHkWMI-j0F9jNPkMwQP3j8wUuYvPqVGu7ACzWc5zXl7VwG599cJU2-EEzr7eLjF5cyUNEHvghiHnurmYe26Kke1jwwJJz1AMvpEPLO8OLSxy278~vZagi63R710mPy86BNJJUjPjkeLiq38rFfcDP61eqa4Ii1kWQjg727ff4Da2oCHzy9YncW3oUzKzRtnobiTqWspKxhGXSpkbFZ2VTAnGs3x9WAA__&Key-Pair-Id=K1VGYTHIYLM9UM",
+  "video_url": "",
+  "texture_urls": []
+}

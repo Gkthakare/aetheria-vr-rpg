@@ -1,0 +1,15 @@
+{
+  "catalog_id": "weapon.bow.mythic.v1",
+  "meshy_base_name": "weapon_bow_mythic_v1",
+  "unity_import_folder": "Assets/ImportedContent/Creatures/weapon.bow.mythic.v1",
+  "files": [
+    "weapon_bow_mythic_v1.glb",
+    "weapon_bow_mythic_v1.fbx",
+    "weapon_bow_mythic_v1.usdz",
+    "weapon_bow_mythic_v1.obj",
+    "weapon_bow_mythic_v1.stl",
+    "weapon_bow_mythic_v1_thumbnail.png"
+  ],
+  "unity_import_tip": "Unity 2022 imports .fbx/.obj natively. If .glb shows as Default Asset, use the .fbx from this folder or add package com.unity.cloud.gltfast.",
+  "generation_json": "assets/raw/generation_20260426_080433.json"
+}

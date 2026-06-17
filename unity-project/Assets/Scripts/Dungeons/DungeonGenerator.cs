@@ -54,6 +54,7 @@ namespace Aetheria.Dungeons
             // Create nodes
             graph.AddNode(new DungeonRoom(RoomType.Start));
             graph.AddNode(new DungeonRoom(RoomType.Boss));
+            graph.AddNode(new DungeonRoom(RoomType.Training));
 
             int hubs = Mathf.Max(1, roomCount / 4);
             int keys = Mathf.Clamp(roomCount / 5, 1, 3);
@@ -74,7 +75,11 @@ namespace Aetheria.Dungeons
 
             var hubList = graph.GetAll(RoomType.Hub);
             var keyList = graph.GetAll(RoomType.KeyRoom);
-            var others = graph.GetAllExcept(new[] { RoomType.Start, RoomType.Boss, RoomType.Hub, RoomType.KeyRoom });
+            var others = graph.GetAllExcept(new[] { RoomType.Start, RoomType.Boss, RoomType.Training, RoomType.Hub, RoomType.KeyRoom });
+            var trainingRoom = graph.GetFirst(RoomType.Training);
+
+            // Start -> Training (always available for weapons/gesture practice)
+            graph.Connect(start, trainingRoom);
 
             // Chain start -> hubs
             DungeonRoom prev = start;
@@ -107,7 +112,7 @@ namespace Aetheria.Dungeons
         }
     }
 
-    public enum RoomType { Start, Corridor, Hub, KeyRoom, TrapRoom, MiniBoss, Boss }
+    public enum RoomType { Start, Corridor, Hub, KeyRoom, TrapRoom, MiniBoss, Boss, Training }
 
     [Serializable]
     public class DungeonRoom

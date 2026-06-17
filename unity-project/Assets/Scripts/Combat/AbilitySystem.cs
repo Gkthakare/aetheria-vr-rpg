@@ -3,16 +3,18 @@ using System.Collections.Generic;
 
 namespace Aetheria.Combat
 {
-    /// <summary>
-    /// Minimal ability system scaffold: stats, stamina, cooldowns, and queued skills.
-    /// Designed to be deterministic on the server by consuming inputs and timestamps.
-    /// </summary>
     public class AbilitySystem : MonoBehaviour
     {
+        [Header("VFX")]
+        [SerializeField] private AbilityVFX abilityVFX;
+        [SerializeField] private Transform attackOrigin;
+        [SerializeField] private float attackRange = 2f;
+        [SerializeField] private float attackDamage = 15f;
+
         [Header("Stats")]
         public float maxStamina = 100f;
         public float staminaRegenPerSec = 10f;
-        public float weaponWeight = 1.0f; // affects stamina cost
+        public float weaponWeight = 1.0f;
 
         [Header("Runtime")]
         public float stamina;
@@ -22,13 +24,13 @@ namespace Aetheria.Combat
         private void Awake()
         {
             stamina = maxStamina;
+            if (attackOrigin == null && Camera.main != null)
+                attackOrigin = Camera.main.transform;
         }
 
         private void Update()
         {
             stamina = Mathf.Min(maxStamina, stamina + staminaRegenPerSec * Time.deltaTime);
-
-            // Example keyboard inputs to demo logic in Editor
             if (Input.GetKeyDown(KeyCode.J)) TryUseSkill(WeaponSkills.LightCut);
             if (Input.GetKeyDown(KeyCode.K)) TryUseSkill(WeaponSkills.HeavyCleave);
             if (Input.GetKeyDown(KeyCode.L)) TryUseSkill(WeaponSkills.FinisherThrust);
@@ -55,8 +57,29 @@ namespace Aetheria.Combat
             stamina -= cost;
             cooldownUntil[key] = now + skill.Cooldown;
             Debug.Log($"[Ability] Cast {key} cost {cost:0} stamina. Remaining {stamina:0}");
-            // TODO: trigger animation/events/damage windows
+            if (abilityVFX != null) abilityVFX.PlaySkillVFX(skill);
+            TryHitEnemies();
             return true;
+        }
+
+        private void TryHitEnemies()
+        {
+            if (attackOrigin == null)
+                attackOrigin = Camera.main != null ? Camera.main.transform : transform;
+            Vector3 pos = attackOrigin.position;
+            Vector3 fwd = attackOrigin.forward;
+            RaycastHit[] hits = Physics.RaycastAll(pos, fwd, attackRange, ~0, QueryTriggerInteraction.Ignore);
+            foreach (var hit in hits)
+            {
+                var enemy = hit.collider.GetComponentInParent<EnemyController>();
+                if (enemy == null) continue;
+                enemy.TakeDamage(attackDamage);
+                if (abilityVFX != null)
+                {
+                    abilityVFX.PlayHitSparks(hit.point);
+                    abilityVFX.PlayBloodSpatter(hit.point);
+                }
+            }
         }
     }
 
@@ -76,5 +99,3 @@ namespace Aetheria.Combat
         { Id = id; BaseStaminaCost = cost; Cooldown = cd; }
     }
 }
-
-

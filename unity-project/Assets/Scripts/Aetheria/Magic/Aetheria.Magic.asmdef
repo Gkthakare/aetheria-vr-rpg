@@ -1,0 +1,17 @@
+{
+  "name": "Aetheria.Magic",
+  "rootNamespace": "Aetheria.Magic",
+  "references": [
+    "Aetheria.WaterMagic",
+    "Aetheria.VR"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

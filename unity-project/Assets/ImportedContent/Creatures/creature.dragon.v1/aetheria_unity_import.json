@@ -1,0 +1,15 @@
+{
+  "catalog_id": "creature.dragon.v1",
+  "meshy_base_name": "creature_dragon_v1",
+  "unity_import_folder": "Assets/ImportedContent/Creatures/creature.dragon.v1",
+  "unity_import_tip": "Unity 2022 imports .fbx/.obj natively. If .glb shows as Default Asset, use the .fbx from this folder or add package com.unity.cloud.gltfast.",
+  "files": [
+    "creature_dragon_v1.glb",
+    "creature_dragon_v1.fbx",
+    "creature_dragon_v1.usdz",
+    "creature_dragon_v1.obj",
+    "creature_dragon_v1.stl",
+    "creature_dragon_v1_thumbnail.png"
+  ],
+  "generation_json": "assets/raw/generation_20260424_014711.json"
+}

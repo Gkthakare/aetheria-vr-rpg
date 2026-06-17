@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7636287569386527007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642431324080282070}
+  - component: {fileID: 1578245503355385198}
+  - component: {fileID: 4149402644870602869}
+  - component: {fileID: 4085283035005854907}
+  - component: {fileID: 1758900769023312414}
+  - component: {fileID: 1906758937517659439}
+  - component: {fileID: 5511223344556677880}
+  - component: {fileID: 5511223344556677881}
+  m_Layer: 0
+  m_Name: WorldManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &642431324080282070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578245503355385198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0abc21c3a4945484dab091df1ab91231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkSize: 16
+  tileSize: 1
+  seed: 12345
+  noiseScale: 0.1
+  octaves: 4
+  persistence: 0.5
+  lacunarity: 2
+  terrainTypes:
+  - name: Water
+    tileType: 0
+    height: 0.2
+    color: {r: 0.18149982, g: 0.19874555, b: 0.836478, a: 0}
+  - name: Sand
+    tileType: 1
+    height: 0.4
+    color: {r: 0.7987421, g: 0.6936147, b: 0.14317067, a: 0}
+  - name: Grass
+    tileType: 2
+    height: 0.6
+    color: {r: 0.28601837, g: 0.64779866, b: 0.23426668, a: 0}
+  - name: Forest
+    tileType: 3
+    height: 0.8
+    color: {r: 0.1126339, g: 0.42138356, b: 0.117417626, a: 0}
+  - name: Mountain
+    tileType: 4
+    height: 0.9
+    color: {r: 0.5597484, g: 0.5597484, b: 0.5597484, a: 0}
+  - name: Snow
+    tileType: 5
+    height: 1
+    color: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &4149402644870602869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00009241cbe31904b8db4e591726d535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderDistance: 4
+  chunkSize: 16
+  tileSize: 1
+  waterMaterial: {fileID: 0}
+  sandMaterial: {fileID: 0}
+  grassMaterial: {fileID: 0}
+  forestMaterial: {fileID: 0}
+  mountainMaterial: {fileID: 0}
+  snowMaterial: {fileID: 0}
+  grassPrefab: {fileID: 0}
+  packTreePrefabs: []
+  packMountainRockPrefabs: []
+  mountainRockSpawnChance: 0.35
+  mountainRockScaleMin: 0.35
+  mountainRockScaleMax: 0.65
+  modelPool: {fileID: 0}
+  aiDecorChance: 0.15
+  useVegetationDensity: 1
+  suppressWaterTilesForSuimono: 1
+  enableProceduralTerrainChunks: 1
+  chunkGenerator: {fileID: 1578245503355385198}
+  player: {fileID: 0}
+--- !u!114 &4085283035005854907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95eac43324732147a4a49e3bc3107cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 12345
+  floorIndex: 1
+  minRooms: 8
+  maxRooms: 16
+  logGraph: 1
+--- !u!114 &1758900769023312414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b39efab1e195094596fc8f3c4c6602c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkGenerator: {fileID: 1578245503355385198}
+  dungeonGenerator: {fileID: 4085283035005854907}
+  abilitySystem: {fileID: 0}
+  enableVoiceCommands: 1
+  commandCooldown: 1
+--- !u!114 &1906758937517659439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422858b119aaac74abef8ed70ec2769c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableAIIntegration: 0
+  voiceTimeout: 5
+  commandCooldown: 2
+  enableVoiceCommands: 1
+  chunkGenerator: {fileID: 1578245503355385198}
+  dungeonGenerator: {fileID: 4085283035005854907}
+  abilitySystem: {fileID: 0}
+--- !u!114 &5511223344556677880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSuimonoInfiniteOcean: 1
+  suimonoModulePrefab: {fileID: 100100000, guid: 4b32513007bed16459318425600ef785, type: 3}
+  suimonoSurfacePrefab: {fileID: 100100000, guid: 3048c9a6cfd4b164fa543b07f10f5d6f, type: 3}
+  waterSurfaceY: -0.12
+  islandWorldForSeaLevel: {fileID: 0}
+  parentOverride: {fileID: 0}
+  manualCameraTransform: {fileID: 0}
+  sceneDirectionalLight: {fileID: 0}
+  autoFindDirectionalLight: 1
+  applyGameplayWaterDefaults: 1
+  defaultFlowSpeed: 0.09
+  defaultWaveScale: 0.55
+  enableSuimonoInteraction: 1
+  suimonoRippleFxPrefab: {fileID: 100100000, guid: 00dc73c91633d20418744bc987256fac, type: 3}
+  forceMainCameraForwardRendering: 1
+  extendMainCameraFarClipForHorizon: 1
+  mainCameraFarClipPlane: 5000
+  ensureSkyboxClearFlagsOnMainCamera: 1
+  skyboxMaterialEnsure: {fileID: 0}
+  reduceReflectionWorkForVr: 1
+  refractStrengthWhenStableVr: 0.55
+  chunkManager: {fileID: 4149402644870602869}
+--- !u!114 &5511223344556677881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636287569386527007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3a2b1c0d9e8f7a6b5c4d3e2f1a0b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpawner: 1
+  player: {fileID: 0}
+  heightAboveWater: 1.2
+  spawnRadiusMin: 8
+  spawnRadiusMax: 35
+  intervalSeconds: 4.5
+  effectLifetimeSeconds: 8
+  hovlPrefabs:
+  - {fileID: 100100000, guid: a2a060732547fe64581bb0cb3c2bdf1d, type: 3}
+  - {fileID: 100100000, guid: fb66a85d95aa25e439cb3c7792564804, type: 3}
+  - {fileID: 100100000, guid: 45e0f06c750176947862c10346226439, type: 3}

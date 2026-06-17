@@ -12,8 +12,13 @@ namespace Aetheria.World
     {
         [Header("Chunk Settings")]
         [SerializeField] private int chunkSize = 16;
-        [SerializeField] private float tileSize = 1f;
+        [SerializeField] private float tileSize = 1f; // Size of each tile (used by ChunkManager for visualization)
         [SerializeField] private int seed = 12345;
+        
+        /// <summary>
+        /// Get tile size for visualization
+        /// </summary>
+        public float GetTileSize() => tileSize;
         
         [Header("Noise Settings")]
         [SerializeField] private float noiseScale = 0.1f;

@@ -1,0 +1,31 @@
+{
+  "id": "019dc7a5-6494-76f3-9e06-ec963ec8c8ec",
+  "type": "text-to-3d-preview",
+  "mode": "preview",
+  "name": "",
+  "model_type": "standard",
+  "seed": 1737801161,
+  "art_style": "realistic",
+  "texture_richness": "",
+  "prompt": "Create a game-ready 3D asset with the following requirements:\n- Asset category: monster\n- Style: semi-realistic\n- Poly budget: around 35000 triangles\n- Texture profile: PBR realistic\n- Key details: none\n- Animation-ready topology: True\n- Required animations: idle, walk, attack, hit\nReturn clean geometry suitable for Unity import.",
+  "negative_prompt": "",
+  "texture_prompt": "",
+  "texture_image_url": "",
+  "status": "SUCCEEDED",
+  "created_at": 1777171000125,
+  "progress": 100,
+  "started_at": 1777171000212,
+  "finished_at": 1777171087537,
+  "task_error": null,
+  "model_urls": {
+    "glb": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a5-6494-76f3-9e06-ec963ec8c8ec/output/model.glb?Expires=4930761600&Signature=j2BdjmJMgrxE4fPdfUsMzk-JcpRzPr5gM5CuIljDV9kQwzUhBBTDZraayUrzhlA5q7eOMJp2whBELyDNwPjsdYWsJd8zsmcV5h5NjFhqF9djuVwFy4SfMm5MrzST752O1ZnZcRtpAAOaOa9TAtIdu4nOFjNLspphHfm4lwHrNPn7SvQ9x96hVlk2Q~MBigTyDo6zegyalj~G07uiT8RNSPHbEIlAC3tgx-TEaKpIP-r0Vt1lqPnx9llvAmEVBojw33o8HwcBBEX4CVzViaEq1azuGlUDRICiS3~WhrwNTBTHHqKM1yUe7XtUYgVZCpwvjrTwjMaJKj~bs-N4rEj0Aw__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "fbx": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a5-6494-76f3-9e06-ec963ec8c8ec/output/model.fbx?Expires=4930761600&Signature=foj2QW2qbxajJpYclEHhtX-PlEnQ2fWI-R6UIF9rWh~j22M1gsmP1gZ4oU5wV82CnLjwtvymInmCY00rWkBXYHE6Faw~Jky3UI1xFk8Zca92urMH8bGla01uN-Eem7C4BwQ85F24h821So3Tf4vzrt7BO~i8C5~IBATITmCJshiDvKqB1vfQ8UfczbN5Dje18mgmvfJrf~Q29M2b0jsXKiIO~wYXUsC2nkHpvfvOADm~rz1emz6hT-4of~mtgcekAziyrZxtXEVZ3PA6hgxNz0ZdfxHoCydEQx1cOFtbo3Iw-tC2VcOZg2FZ~0IxLxaKtW5nzEEK--vZxWT4SzvRVw__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "usdz": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a5-6494-76f3-9e06-ec963ec8c8ec/output/model.usdz?Expires=4930761600&Signature=htb9Pa9Zl7XJ6dYRhuCI8rdhgzhhOtEm7U5IJPJS6SETRYTkXNwl2jp-hqHjQdAH-uMoVqUzVLEdLA8Fs13rsJK78BaMIT2nqR8MwaL3PcX3fvtKBzm9L9~lEDr4fgcwH3Z6r5S-1tLO-oKLPAq7PVwhFhIXuwFSnNjS3QsG0DxacHcEOI37BMO~ujBVn4gfF9cwF5JXWS-mbUBg8fZ5EZuI3W5W0s7PpCPfQmqi2yxKhMCgw~r9QFu3RIrow3tQJCc6elv8uaG30tDYFjjWt6f-GEGhIK5E6D5m-UjtGjz86vNwiW5NV2S~5znlxaRQ~HJ917C0i2sf8EvavW6T2A__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "obj": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a5-6494-76f3-9e06-ec963ec8c8ec/output/model.obj?Expires=4930761600&Signature=GnBQO7EMRDYBVm~JEP7gNQIt4DqZZ6PsqIGL9VW2CwWMzAQwPbaB~8iI5pjltpOekWdbtNtKXBczzkbGkNU7OIp8jXXOuEPSwqOmU7B~jFr2yODKDg1W89xTkfCcPkMC8MBwy5q-FKmCdLaONet4k7cMbVQrkqctg5u9-TJMi0Z0QbICLJC83L2uyKGzSW-t-Aknav3xXPhHC5rBBkN5et5b0ChBnkNfaeOLuZRnHm5wpDiijPa4j-OVHpbTkHLUb5KHtg2dH6nODUv61i1h4Fcp8C9G~kMcKoTJBg53ccI7kK1kE7mbGSr8hRoSThOnK2mjmYDbKbs7nS1rT2wwnA__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "stl": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a5-6494-76f3-9e06-ec963ec8c8ec/output/model.stl?Expires=4930761600&Signature=ZbEEL9DI~voKcasT8h9tBC~8L5uzdKXRE1IO784OBkBG7-HYaOUBK6l8RYGSc8IHJtfTgr0PybzqfOe3TvqbtBwnksiOe8XVM4zoNqIJTrH4wvaQOfboNgLmHms8tnSlROrzNaI8f4fIeW6d13sNegoELqiFevPVECINRBXaAGYWbeKDF9olw1TVtvj3cSvM~7PVIPUS5RBSpec~OoYsQwZaFPFfbbMeyo~sGNtcW~OLlTsL0hXPa-~WxXp8B4403K11zFD93HxQ7SkW5M-mglMapkUb6dzNtCqPKhP6bQ6dU63LRwp-6MhZqMVKNRFY6Mi0aHKpJB6V-vK0KzyAHg__&Key-Pair-Id=K1VGYTHIYLM9UM"
+  },
+  "thumbnail_url": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a5-6494-76f3-9e06-ec963ec8c8ec/output/preview.png?Expires=4930761600&Signature=KzqTMh9zHmlNH6yAlqmDKkGXOkv5bTDlag7ouQJzNQk8RR~ZukRD6wuwvjymYnQbbKZOa3Fb7pd~BjKlydvWxnUwBu2Dc7gCOuq68UtF~pPB-2D4rNb5RmwCB5cDeKOhIybcfS1Jf8z7k8~02q5yX120U2RNEQG7kiy5gg55ke4-0i09r2YIn846fH3r0k2ZK~QSzFzMin0up92awduN-Zo0ad4JVDywZCvbXyLw2L71fXMGq4oA41CHYedQaHf5Cqgjs4CjfbbmfZ7FODK38TSrJq5Zs11RLghVsyVv4JpdbjCSrZ~lvW7zXN7Q0R6flWOf8pMpRFQk4zzVvsIreQ__&Key-Pair-Id=K1VGYTHIYLM9UM",
+  "video_url": "",
+  "texture_urls": [],
+  "consumed_credits": 20
+}

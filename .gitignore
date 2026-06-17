@@ -1,0 +1,43 @@
+# ---- Repo-root ignores ----
+# Unity has its own unity-project/.gitignore. Patterns here are case-insensitive
+# (core.ignorecase=true), so AVOID generic names like models/ or env/ that would
+# clobber Unity asset folders (e.g. ".../Models/"). Keep ML/python paths scoped.
+
+# Python
+venv/
+.venv/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Backend (FastAPI) runtime / generated artifacts and model caches
+backend/.venv/
+backend/env/
+backend/models/
+backend/data/exports/
+backend/data/generated_candidates/
+backend/**/*.db
+backend/**/*.sqlite
+backend/**/*.sqlite3
+backend/**/video_frames/
+backend/**/ffos_frames/
+
+# Model weights (safe extensions, won't match Unity assets)
+*.ckpt
+*.safetensors
+
+# Node (backend studio dashboard / tooling)
+node_modules/
+.next/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

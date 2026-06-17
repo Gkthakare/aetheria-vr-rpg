@@ -1,0 +1,31 @@
+{
+  "id": "019dc7a3-6f54-74ea-a0ba-0e3f75949f36",
+  "type": "text-to-3d-preview",
+  "mode": "preview",
+  "name": "",
+  "model_type": "standard",
+  "seed": 484217571,
+  "art_style": "realistic",
+  "texture_richness": "",
+  "prompt": "Create a game-ready 3D asset with the following requirements:\n- Asset category: magic\n- Style: semi-realistic\n- Poly budget: around 16000 triangles\n- Texture profile: PBR emissive magical VFX-ready\n- Key details: target_platform=unity_vr, emission=high\n- Animation-ready topology: True\n- Required animations: none\nReturn clean geometry suitable for Unity import.",
+  "negative_prompt": "",
+  "texture_prompt": "",
+  "texture_image_url": "",
+  "status": "SUCCEEDED",
+  "created_at": 1777170871829,
+  "progress": 100,
+  "started_at": 1777170872633,
+  "finished_at": 1777170953882,
+  "task_error": null,
+  "model_urls": {
+    "glb": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a3-6f54-74ea-a0ba-0e3f75949f36/output/model.glb?Expires=4930761600&Signature=c8JudXqflSi3j2cpyCgiUrz7kHfXcSX1J705occXV64dmLk6-DGFGANLUQNYd7trbhLGbXmFag8R4gkzBMV2JlCej6ODrqvaGIy8QBaXsoZfH5kqVwkApYggRnbbGwy76Ww6zsgAW5gpJEFBsaaXz0X9sMPOwwnaY4YrxHAEHoefjITYKJslEuc45MVUwMXCKrxHBO~bBPUpLTQ6B4nC85JTcD2WB~2G70oh1X6hTDpu97IDHbccjiD9WYWWBdGDMLMQ9jYIuW5~II~MW8sCsDa720jP52vuYUy-lREAtg64feHSWyZ8-acPAwXdWz1flNZho2PF24JV2e3iI9g2Rw__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "fbx": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a3-6f54-74ea-a0ba-0e3f75949f36/output/model.fbx?Expires=4930761600&Signature=itJCFjxDuO3KbyYKJZIygbOp67yvjSZw8Dn-KUG~YLIowIna1LDLA5RpmcD6vqm2yCvmVjfhTx2pCKQxTPSEAcBVEUhkyc-Kis5eAB4dwSpuUjGPazxgr5wsJznAnLS75xCGR7VYe1GJkEGoaH0U4VbxLtlEjVpPmfFyk6-30ngFQzBzpepFE1A2aPAE0U3YNVCY8MRpsv9qIFT6xEjf1AcOzwaGZOvD7Bd0dEh~UtQt6~TvyWKU-disVE0X0nBkSk8oxeMVTksxrvbKY4ab87B9jb~DAgbQv24z5GV6IuJVmpwR6ilqX8YodamECSGoAiOKlL9Q4Xhgk4wjVQV3Yw__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "usdz": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a3-6f54-74ea-a0ba-0e3f75949f36/output/model.usdz?Expires=4930761600&Signature=T0kLF9YZ9Q7OUQrSk6XHRp5V4Xus1V8RXEiH0fQhWQvepBKrKCN6SxSIWQFIkYuSKPIc6dArkIKqGbBO2~CmhzPgpVw7M4yGJxyjeyKPvz6qdkjsx1Ov2IVbwYtC0zwjl4Kt-ydSkttsVuquNp-aaZbTyw2TGLhbF44CQKUj0A2oTPrkVsFoQXz508PNFtdOF9Rw5nJa66Hg71jYkGPCvmz1M6KQzHUAY7c6HSuCdHVUUpGaeRX77rzHJs3HTCRO-wU3VKaigULJAf43dIy1acqvTDwu2a-NOtlZLk7wwkSMif4hEci8eoHRvyGB3c0DjF9fVLlVsmsCd7h8KFba7g__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "obj": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a3-6f54-74ea-a0ba-0e3f75949f36/output/model.obj?Expires=4930761600&Signature=dHlz3qrp83zIKQ6BmRRQXoZEMM0OqFsUEXOHMo8nSqdHCQNH-PweE-G3h6uqqEkFzeQpcxZtUK1tMy6M4JfvmL-vXEPyoUG9~taLBHgcvIjuHzY18Ikz0wPpqoZdzvdl2ydulgE9itS6zzLHVAVItt9Hy9h0OXEqFNJGak4cJVK09jgiPNiHA6T57tCFKY7Y32RfzCoNO9AEQW-94WIkE1-Kfe7-LIBb2QiJrLdWKK6ngJ6gbMdmmH5-sKPoGoFTc5r2rJow3B02QjX5YNwsVhbytbyaXAfYsHSvmxGpqgA3vIos48m2fiueLCaYzK1rlSG9oKzkGOegIEl6KUpVaQ__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "stl": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a3-6f54-74ea-a0ba-0e3f75949f36/output/model.stl?Expires=4930761600&Signature=o3vYtdRUbio6i~XJvv8ihNyxrsfwB5yf-68iwgP5tjNofjs-kf~hQMxwsArCzfpG6ksWkjUNP4Tm~Djjb2HdD7T72xTD8iLYKH1TEfAQLJAkBGYP27zCj8bwy7ykM-AttQjc-JQ9oFANl0LFV3NW0OERZnzCrySxLf86lFBqqgREhK2VpDYEhqrpSk-Y0cDY9yuXucFc3zZmXRxEeypLL0dRnpp61At-q9rvmq6KSF7WSxRt5LmNlcTy7xd4jH4ir-STqo7uHye-yDJX3C2HwXB0mkIM9BNJM9Qy76S2hN3GwlN9peNVKUCWIXPLVLgT7TCCWVD1v9M8sO6Fx6PBcA__&Key-Pair-Id=K1VGYTHIYLM9UM"
+  },
+  "thumbnail_url": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a3-6f54-74ea-a0ba-0e3f75949f36/output/preview.png?Expires=4930761600&Signature=EmbyN1Xk2RLkwZYtnYf5t37gDW9J0beud~klozGVe1lNwR1sJIvWUbS7JiZ3KqIkf2oXrnH5KPOTTLD49AK7AwZER3EmU6fEk8664O4wE6jcN8hXf5v2JoudfixzzSGF1CnF17~YS13-5g4t-DCSmt0LEtMPftub0hEiOznszDvNUTiwHsrdM1NVWlT1CB3ZkHtRgZcjzZrz9~G6k4XK8UHfIOa-0lDiMPPGFU03vNywXNbI9QpHTxNvHvxL6sRhF0gUz0~Oiv59VrEYUa2kaE0Mb6834YbWxZtb0RV~KaGJvD4GKFgBDy7xgYUIEg1u5-GB0mRfzdLRZ4W1lMs8bg__&Key-Pair-Id=K1VGYTHIYLM9UM",
+  "video_url": "",
+  "texture_urls": [],
+  "consumed_credits": 20
+}

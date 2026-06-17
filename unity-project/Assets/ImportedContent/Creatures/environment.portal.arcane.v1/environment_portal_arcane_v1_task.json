@@ -1,0 +1,31 @@
+{
+  "id": "019dc7a7-5328-7f89-9caa-135cf9a1b54f",
+  "type": "text-to-3d-preview",
+  "mode": "preview",
+  "name": "",
+  "model_type": "standard",
+  "seed": 650684626,
+  "art_style": "realistic",
+  "texture_richness": "",
+  "prompt": "Create a game-ready 3D asset with the following requirements:\n- Asset category: portal\n- Style: semi-realistic\n- Poly budget: around 15000 triangles\n- Texture profile: PBR emissive arcane surface\n- Key details: emission=high, effect_type=looping_gateway\n- Animation-ready topology: True\n- Required animations: none\nReturn clean geometry suitable for Unity import.",
+  "negative_prompt": "",
+  "texture_prompt": "",
+  "texture_image_url": "",
+  "status": "SUCCEEDED",
+  "created_at": 1777171126513,
+  "progress": 100,
+  "started_at": 1777171126646,
+  "finished_at": 1777171210784,
+  "task_error": null,
+  "model_urls": {
+    "glb": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a7-5328-7f89-9caa-135cf9a1b54f/output/model.glb?Expires=4930761600&Signature=OwIAqQoda3IjlqPYnSCPZiidLrYj1m9zhLH-OV~GQ2HaCGuSQ8ncbnZEHh1lzTJTaYWWBYhgk~NlzZ54obb1SDQgMi0r5z8wZNNvIxlC4UllRfcvrdI2yWYLPqGBX71DJe1R9QCOD8pCigJHYEURMzmI69FHHBcpfHQk-3NKzmHrthWrcEovKbgEGxWxyHH1m3LXqtZyFI5bh~USrDqpzY~JAp56sK8OhQsYyzPOMMZsKyCwOgDEKtwdATsxV5aX5orvRpz5rgOk~IAgY5pOyPqxFpxCo3-ZdoqWGTlkzp1iktTDRLIzwTLYYXR8ZeRY50HrhP39vHJQgLWcClI83w__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "fbx": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a7-5328-7f89-9caa-135cf9a1b54f/output/model.fbx?Expires=4930761600&Signature=jUdJhNDDk67Ojed2Qc2yZ9~nFIzxi0eQdm3nn94zxeujD3MDwzrQm-4I~vB9jqlfCOKNlioz-AXfy4cwjJ-u9Yl7wDE7d8ZbuVdXWix3mHxfHb3zJTEdWHsTDr489wIASCtRyQKHPcngrZ7WgK4iUVUEN~eWX3GZ3ADfYRUwGq4GPxp4-HA-s5drqwCNYLxmNhyQ0i~cur0PwZLUzhBZlTQpmZcYCH6TFLe58diD8P--ugaTSgpqd5MONi4QJXn6D8I7PF50BVWV3tSOMCr18iX5KQFSmG-ypN7ZpidIBvNaoS2zsErlZbfTDvVO--9Wpq82btj-DZs-TaxeunPZiA__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "usdz": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a7-5328-7f89-9caa-135cf9a1b54f/output/model.usdz?Expires=4930761600&Signature=QuVelNkEWmHc11KeJkdsuPkWrguq2CBjAHCoo3jgZx0NROMfUGcgt5PMQ44pV0LhKQMH6WpbdiCOXfUihK8K0mK6U9BVuT7dkUWriTzLb-LbFi-EZ3rmIHPrLjkDgkkQphu8H2phO-UQqZki8yyCJMuWQVLti-ryR-4XqjIdodJ6um4P1~Bg~n1dQ6fdilXmbCmIcCx3WncxRgRCGS6-6OSjO4IMvY98P3u5vYTsN4lAxsuSIQALjHm45kAqOjh1MCidTCex-buiK8kHDX~7zX~YjO9q-tXN6re~-Q7Mu7Sgdjmi5GkXQe0YrbuigsKzsZjDX3IeFF4BfQPWRedD3w__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "obj": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a7-5328-7f89-9caa-135cf9a1b54f/output/model.obj?Expires=4930761600&Signature=NrLS4l98VpzDvZWr1VvwZG0zxFwhmw4HpzYSoAFYuTuRgb8M0iQNJ89sL7Mna0-hdoGAcf2vj7iR6nK176Yn6jNht5CVZYLQ3YAIhO2A4pB~zMxt6Y9shHEq2AHCn5APvW9fJ26~ydX6TY4yRMx2eZaedmRCndKebFx8ApWwc7t792g5CW4nqCOFuZHawIlHOAehckjmg-SBfZm9s-GR2hbbyu-SV2m8CyRs6bhTEJhRzFus6DsMohiTTMTxDmCeZpTaL3~Mxy1C2nNwEdTM7-Y1tdg1C7NxSPkXpCXitMHGvVDO53NfWxZSZJa~NOcaclcIFnloQIwwdwZE~Ie-Uw__&Key-Pair-Id=K1VGYTHIYLM9UM",
+    "stl": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a7-5328-7f89-9caa-135cf9a1b54f/output/model.stl?Expires=4930761600&Signature=hEpVViJUIX2EJmPv87QzgSKGLdYST3k3Cyq5GhKQXvIgtMNH0mIOGR2I~G3DJWWQpFxexiyIszfkeLTWn5UB6VJTWltSOIz-dNKyBDOSpcquoHVuLmjndb3P8cQ50zJQpVRM9jt2~xECSwwZJ-jnu468GIEoe5lqBzpItCORLdh8mzJpDVojxAkMIgm-W2igh9HiyhynZMu6IIUs9t6OCTBneuADKRhiqHYZQCLjo0Yaqtj3jUyXu1u~p6-BMYVTcRC0fgMJ7LkI~tLIECb3jdVEtRilDkpgfxWV9fErIYHpxglOMFaNZ7azj-fFs6nqpHtcFOmVHIHaJZGnqj-79w__&Key-Pair-Id=K1VGYTHIYLM9UM"
+  },
+  "thumbnail_url": "https://assets.meshy.ai/2b3cbac4-015a-4b76-ab5f-9243ca8ec02a/tasks/019dc7a7-5328-7f89-9caa-135cf9a1b54f/output/preview.png?Expires=4930761600&Signature=SQbg5y-ICsBXU3Bev2pDPssRjyS9iSOvOiDqnzGHb2gxK9xdjggY7fqgc3WrueyPS~4VXzarem9DCeKY6kOgEIhRgZ67cKduBdzsQf0DPSFVKSGdtrXfl2ytvV9qpd9EZwAClXARFbPLWmVzde~bHJmrLahuIqx6eVkhNtWsNByHNZZoY20TgcAydMjtDjyJVou-aCqr3QCsUWunng5NjjsFn2xUsGO1wvtOefpZVXqPEia0tKTOwtbNAaPr6ryohHmuQpkIAa9kaV6rASR17uNpDDIjXw4IbaSR3gyONC8IYgimuHlbCP39wu~xjKxpe5TOaDO2tmq-ic-SyizYlQ__&Key-Pair-Id=K1VGYTHIYLM9UM",
+  "video_url": "",
+  "texture_urls": [],
+  "consumed_credits": 20
+}
